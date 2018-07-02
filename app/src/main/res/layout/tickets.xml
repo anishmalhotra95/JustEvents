@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Event_Details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TEN"
+            android:textSize="20dp"
+
+            android:paddingTop="25dp"
+            android:text="Event Name:"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/TEventName"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/TEN"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name:"
+            android:textSize="20dp"
+
+            android:paddingTop="25dp"
+            android:id="@+id/TC"
+            android:layout_below="@+id/TEN"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/CustomerName"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/TC"
+            android:layout_below="@+id/TEventName"
+            android:textSize="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textSize="20dp"
+
+            android:paddingTop="25dp"
+            android:id="@+id/TT"
+            android:layout_below="@+id/TC"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/Ttime"
+            android:gravity="right"
+            android:layout_below="@+id/CustomerName"
+            android:layout_toRightOf="@+id/TT"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20dp"
+
+            android:paddingTop="25dp"
+            android:id="@+id/TD"
+            android:layout_below="@+id/TT"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/TDate"
+            android:gravity="right"
+            android:layout_below="@+id/TT"
+            android:layout_toRightOf="@+id/TD"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venue"
+            android:textSize="20dp"
+            android:paddingTop="25dp"
+            android:id="@+id/TV"
+            android:layout_below="@+id/TD"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:textSize="20dp"
+            android:id="@+id/TVenue"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/TV"
+            android:layout_below="@+id/TDate"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:id="@+id/TP"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:textSize="20dp"
+            android:layout_below="@+id/TV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/TPrice"
+            android:textSize="20dp"
+            android:layout_below="@+id/TVenue"
+            android:layout_toRightOf="@+id/TP"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Ticket No:"
+            android:id="@+id/TNo"
+            android:paddingTop="25dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/TP"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25dp"
+            android:paddingLeft="5dp"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:id="@+id/TicketNo"
+            android:layout_below="@+id/TPrice"
+            android:layout_toRightOf="@+id/TNo"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="125dp"
+            android:paddingTop="25dp"
+            android:text="Print"
+            android:textStyle="italic"
+            android:background="#00000000"
+            android:id="@+id/PrintTicket"
+            android:layout_below="@+id/TNo"
+
+            />
+    </RelativeLayout>

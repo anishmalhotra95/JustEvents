@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+            android:id="@+id/imageView1"
+    android:maxWidth="500dp"
+    android:maxHeight="150dp"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:paddingLeft="10dp"
+       android:textSize="22dp"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/Event_name2"
+       android:text="Event Name:"/>
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/EventName2"
+    android:layout_toRightOf="@+id/Event_name2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textSize="22dp"
+   android:id="@+id/No.OfSeats2"
+        android:layout_below="@+id/Event_name2"
+        android:text="No.Of seats:"/>
+
+        <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/No.OfSeats2"
+        android:id="@+id/number"
+        android:layout_below="@+id/imageView1"
+            />
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Now"
+        android:gravity="center_vertical"
+            android:layout_marginLeft="140dp"
+            android:id="@+id/booknow2"
+            android:background="#01ffffff"
+            android:layout_below="@+id/No.OfSeats2"
+        android:layout_gravity="center"/>
+</RelativeLayout>
+</LinearLayout>

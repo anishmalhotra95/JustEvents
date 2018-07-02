@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        android:maxWidth="500dp"
+        android:maxHeight="150dp"/>
+
+    <ScrollView
+        android:id="@+id/event_display"
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/Event_Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EN"
+        android:textSize="20dp"
+
+        android:paddingTop="25dp"
+        android:text="Event Name:"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/EventName"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/EN"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue:"
+        android:textSize="20dp"
+
+        android:paddingTop="25dp"
+        android:id="@+id/V"
+        android:layout_below="@+id/EN"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/Venue"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/V"
+        android:layout_below="@+id/EventName"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textSize="20dp"
+
+        android:paddingTop="25dp"
+        android:id="@+id/T"
+        android:layout_below="@+id/V"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/time"
+        android:gravity="right"
+        android:layout_below="@+id/Venue"
+        android:layout_toRightOf="@+id/T"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="20dp"
+
+        android:paddingTop="25dp"
+        android:id="@+id/D"
+        android:layout_below="@+id/T"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/Date"
+        android:gravity="right"
+        android:layout_below="@+id/time"
+        android:layout_toRightOf="@+id/D"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:paddingTop="25dp"
+        android:id="@+id/D1"
+        android:layout_below="@+id/D"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:id="@+id/Description"
+        android:gravity="right"
+        android:layout_toRightOf="@+id/D1"
+        android:layout_below="@+id/Date"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:id="@+id/P"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:textSize="20dp"
+        android:layout_below="@+id/D1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/Price"
+        android:textSize="20dp"
+        android:layout_below="@+id/Description"
+        android:layout_toRightOf="@+id/P"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Organizer:"
+        android:id="@+id/O"
+        android:paddingTop="25dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/P"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:paddingLeft="5dp"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:id="@+id/OrganisedBy"
+        android:layout_below="@+id/Price"
+        android:layout_toRightOf="@+id/O"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact:"
+        android:textSize="20dp"
+        android:paddingTop="25dp"
+        android:id="@+id/C"
+        android:layout_below="@+id/O"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:id="@+id/Contact"
+
+        android:paddingTop="25dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/C"
+        android:layout_below="@+id/OrganisedBy"
+        />
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

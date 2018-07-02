@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.anish.myfirstproject.Main2Activity"
+    tools:showIn="@layout/activity_main2"
+    android:background="@drawable/image2">
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="380dp">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:id="@+id/Name" />
+             </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="PASSWORD"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:id="@+id/Password" />
+             </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="EMAIL"
+                android:id="@+id/Email" />
+             </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:hint="PHONE NO"
+                android:id="@+id/Phone" />
+             </android.support.design.widget.TextInputLayout>
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+             <EditText
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:hint="CITY"
+                 android:textColor="#ffffff"
+                 android:ems="10"
+                 android:id="@+id/city" />
+             </android.support.design.widget.TextInputLayout>
+
+
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+                <!-- <ImageView
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:id="@+id/Userphoto"/>
+                 <Button
+                     android:layout_toRightOf="@+id/Userphoto"
+                     android:layout_width="200dp"
+                     android:layout_height="wrap_content"
+                     android:text="Add Photo"
+                     android:id="@+id/disppic"
+                     android:layout_gravity="center_horizontal"
+                     android:paddingLeft="50dp"
+                     android:background="#00ffffff"
+                     android:textColor="#ffffff"/>
+-->
+
+                 <Button
+                     android:layout_width="125dp"
+                     android:layout_height="wrap_content"
+                     android:text="Register"
+                     android:id="@+id/Registerbutton"
+                     android:paddingLeft="50dp"
+                     android:paddingTop="10dp"
+
+                 android:background="#00ffffff"
+                     android:textColor="#ffffff"/>
+                 <Button
+                     android:id="@+id/cancel"
+                     android:layout_width="125dp"
+                     android:layout_height="wrap_content"
+                     android:text="Cancel"
+                     android:textColor="#ffffff"
+                     android:background="#00ffffff"
+                     android:paddingLeft="70dp"
+                     android:layout_toRightOf="@+id/Registerbutton"/>
+
+             </RelativeLayout>
+             <!--android:layout_below="@+id/Userphoto"-->
+
+             <!--android:layout_below="@+id/Userphoto"
+         --></LinearLayout>
+</android.support.design.widget.TextInputLayout>
+        </ScrollView>
+    </LinearLayout>
+

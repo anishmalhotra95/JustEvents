@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:background="@drawable/image2"
+    tools:context="com.example.anish.myfirstproject.LoginActivity">
+
+    <!-- Login progress -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame1">
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:maxWidth="500dp"
+        android:maxHeight="150dp"/>
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="380dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingTop="1dp"
+                    android:maxLines="1"
+                    android:textColor="#ffffff"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeActionId="@+id/login"
+                    android:paddingTop="1dp"
+                    android:textColor="#ffffff"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="125dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sign In"
+                android:textColor="#ffffff"
+                android:background="#00ffffff"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="---------"
+                android:textColor="#ffffff"
+                android:textSize="2dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/or"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginTop="5dp"
+                android:id="@+id/Register"
+                android:textColor="#ffffff"
+                android:background="#00ffffff"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+    </FrameLayout>
+</LinearLayout>
